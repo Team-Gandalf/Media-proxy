@@ -5,11 +5,9 @@ const parser = require('body-parser');
 const path = require('path');
 const port = 2112;
 
-
-
 app.use(express.static(path.join(__dirname, '../public')));
-app.use(parser.urlencoded({ extended: true }));
-app.use(parser.json());
+
+// app.use(parser.urlencoded({ extended: true }));
 
 const mediaProxy = createProxyMiddleware({
   target: 'http://localhost:8000',
@@ -29,7 +27,7 @@ const announcementProxy = createProxyMiddleware({
 const bodyProxy = createProxyMiddleware({
   target: 'http://localhost:1991',
   changeOrigin: true,
-};
+});
 
 app.use('/media', mediaProxy);
 
@@ -39,5 +37,7 @@ app.use('/getGame', announcementProxy);
 
 app.use('/mainbody', bodyProxy);
 
+
+app.use(parser.json());
 
 app.listen(port, () => { console.log(`listening at http://localhost:${port}`); });
