@@ -23,7 +23,7 @@ const announcementProxy = createProxyMiddleware({
 });
 
 const bodyProxy = createProxyMiddleware({
-  target: 'http://52.14.114.30:1991',
+  target: 'http://52.14.114.30:1992',
   changeOrigin: true,
 });
 
