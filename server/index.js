@@ -33,6 +33,10 @@ app.use('/api/reviews/:id', reviewProxy);
 
 app.use('/getGame', announcementProxy);
 
+app.use('/updateLikes', announcementProxy);
+
+app.use('/randomGame', announcementProxy);
+
 app.use('/mainbody', bodyProxy);
 
 
