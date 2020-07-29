@@ -3,6 +3,8 @@ This is the proxy server for the Front End Capstone done at Hack Reactor. Our te
 
 I built the Media/Summary component (https://github.com/BHamp/Media) and this server.
 
+![app demo](Steamy.gif)
+
 ## Getting Started
 All of the components are being hosted via AWS, so the proxy needs minimal work to get started. Simply install the dependencies and start the server.
 
