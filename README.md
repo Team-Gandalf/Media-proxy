@@ -1,5 +1,5 @@
 # Steamy
-This is the proxy server for the Front End Capstone done at Hack Reactor. Our team replicated the Steam website, and this is a simplified version of a product page.
+This is the proxy server for my Front End Capstone done at Hack Reactor. Our team replicated the Steam website, and this is a simplified version of a product page.
 
 I built the Media/Summary component (https://github.com/BHamp/Media) and this server.
 
