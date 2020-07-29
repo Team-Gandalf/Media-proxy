@@ -1,14 +1,10 @@
 # Steamy
-This is the proxy server that unites all the microservices into a single page application. Each of the four microservices were built by an individual engineer and then merged using this server. This was the final submission for my Hack Reactor Front-End Capstone project.
+This is the proxy server for the Front End Capstone done at Hack Reactor. Our team replicated the Steam website, and this is a simplified version of a product page.
 
-This app:
-* Renders video and images to the webpage
-* Utilizes conditional rendering to ensure different media types are handled appropriately
-* Implements styled-components to allow seamless integration with other the other microservices
+I built the Media/Summary component (https://github.com/BHamp/Media) and this server.
 
 ## Getting Started
 All of the components are being hosted via AWS, so the proxy needs minimal work to get started. Simply install the dependencies and start the server.
-
 
 ### Installation
 ```sh
